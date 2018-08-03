@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Material"></style>
+    <style name="Material.App"></style>
+    <style name="Material.App.BottomSheetDialog">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="bsd_inDuration">@android:integer/config_mediumAnimTime</item>
+        <item name="bsd_inInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="bsd_outDuration">@android:integer/config_mediumAnimTime</item>
+        <item name="bsd_outInterpolator">@android:anim/accelerate_interpolator</item>
+        <item name="bsd_cancelable">true</item>
+        <item name="bsd_canceledOnTouchOutside">true</item>
+        <item name="bsd_dimAmount">0.5</item>
+    </style>
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <declare-styleable name="BottomSheetDialog">
+        <attr name="bsd_inDuration" format="reference|integer"/>
+        <attr name="bsd_inInterpolator" format="reference"/>
+        <attr name="bsd_outDuration" format="reference|integer"/>
+        <attr name="bsd_outInterpolator" format="reference"/>
+        <attr name="bsd_cancelable" format="reference|boolean"/>
+        <attr name="bsd_canceledOnTouchOutside" format="reference|boolean"/>
+        <attr name="bsd_dimAmount" format="reference|float"/>
+        <attr name="android:layout_height" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<Keyboard android:keyWidth="8.500002%p"-->
+    <!--android:keyHeight="6.4%p"-->
+    <!--android:horizontalGap="1.2%p"-->
+    <!--android:verticalGap="1.55%p"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10.000002%p" android:keyHeight="@dimen/key_height"
+    android:horizontalGap="0.0px" android:verticalGap="0.0px">
+    <Row>
+        <!--<Key-->
+            <!--android:horizontalGap="0.3%p"-->
+             <!--android:keyEdgeFlags="left"-->
+            <!--android:codes="33"-->
+             <!--android:keyLabel="@string/char_33" />                                        &lt;!&ndash; ! &ndash;&gt;-->
+        <Key
+            android:codes="33"
+            android:keyLabel="@string/char_33" />
+        <Key android:codes="64" android:keyLabel="@string/char_64" /><!-- @ -->
+        <Key android:codes="35" android:keyLabel="@string/char_35" /><!-- # -->
+        <Key  android:codes="36" android:keyLabel="@string/char_36" /><!-- $ -->
+        <Key  android:codes="37" android:keyLabel="@string/char_37" /><!-- % -->
+        <Key android:codes="94" android:keyLabel="@string/char_94" /><!-- ^ -->
+        <Key android:codes="38" android:keyLabel="@string/char_38" /><!-- & -->
+        <Key  android:codes="42" android:keyLabel="@string/char_42" /><!-- * -->
+        <Key  android:codes="40" android:keyLabel="@string/char_40" /><!-- ( -->
+        <Key android:codes="41" android:keyEdgeFlags="right"
+            android:keyLabel="@string/char_41" />                                         <!-- ) -->
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="39"
+            android:keyLabel="@string/char_39" />                                        <!-- ' -->
+        <Key  android:codes="34" android:keyLabel="@string/char_34" /><!-- " -->
+        <Key  android:codes="61" android:keyLabel="@string/char_61" /><!-- = -->
+        <Key  android:codes="95" android:keyLabel="@string/char_95" /><!-- _ -->
+        <Key  android:codes="58" android:keyLabel="@string/char_58" /><!-- : -->
+        <Key  android:codes="59" android:keyLabel="@string/char_59" /><!-- ; -->
+        <Key  android:codes="63" android:keyLabel="@string/char_63" /><!-- & -->
+        <Key  android:codes="126" android:keyLabel="@string/char_126" /><!-- ~ -->
+        <Key  android:codes="124" android:keyLabel="@string/char_124" /><!-- | -->
+        <!--<Key  android:codes="999" android:keyEdgeFlags="right"-->
+            <!--android:keyLabel="." />                                         &lt;!&ndash; · &ndash;&gt;-->
+        <Key  android:codes="96" android:keyLabel="@string/char_96" /><!-- ' -->
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="43"
+            android:keyLabel="@string/char_43" />
+        <Key  android:codes="45" android:keyLabel="@string/char_45" />
+        <Key  android:codes="92" android:keyLabel="@string/char_92" />
+        <Key  android:codes="47" android:keyLabel="@string/char_47" />
+        <Key  android:codes="91" android:keyLabel="@string/char_91" />
+        <Key android:codes="93" android:keyLabel="@string/char_93" />
+        <Key  android:codes="123" android:keyLabel="@string/char_123" />
+        <Key  android:codes="125" android:keyLabel="@string/char_125" />
+        <Key  android:codes="-5" android:keyEdgeFlags="right"
+            android:isRepeatable="true"
+            android:keyWidth="20.999998%p"
+            android:keyLabel="Delete" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key
+            android:keyWidth="20.999998%p" android:codes="123456"
+            android:keyEdgeFlags="left" android:isModifier="true"
+            android:isSticky="true"
+            android:keyLabel="@string/char123" />
+        <Key  android:codes="46" android:keyLabel="@string/char_46" /><!-- . -->
+        <Key  android:codes="44" android:keyLabel="@string/char_44" /><!-- , -->
+        <Key  android:codes="60" android:keyLabel="@string/char_60" /><!-- < -->
+        <Key  android:codes="62" android:keyLabel="@string/char_62" /><!-- > -->
+        <Key android:keyWidth="20.999998%p" android:codes="-3"
+            android:keyLabel="完成" />
+        <Key android:keyWidth="20.999998%p" android:codes="456456"
+            android:keyLabel="@string/char_abc"
+            android:keyEdgeFlags="right" android:isRepeatable="true"
+            />
+    </Row>
+</Keyboard>  
